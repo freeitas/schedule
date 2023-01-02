@@ -43,15 +43,15 @@ export function ClaimUsernameForm() {
           Reservar
           <ArrowRight />
         </Button>
+      </Form>
 
-        <FormAnnotation>
+      <FormAnnotation>
           <Text size="sm">
             {errors.username
               ? errors.username.message
               : 'Digite o nome do usuário desejado'}
           </Text>
-        </FormAnnotation>
-      </Form>
+      </FormAnnotation>
     </>
   )
 }
