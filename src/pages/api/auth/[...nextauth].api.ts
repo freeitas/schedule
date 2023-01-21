@@ -40,9 +40,15 @@ export function buildNextAuthOptions(
   
         return true
       },
+      async session({ session, user }) {
+        return {
+          ...session,
+          user,
+        }
+      },
     },
   }
-  
+
 }
 
 export default async function auth(req: NextApiRequest, res: NextApiResponse) {
